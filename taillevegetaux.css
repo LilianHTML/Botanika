@@ -56,12 +56,8 @@ main {
     width: 60%;
 }
 .content img {
-    width: 100%;
+      width: 100%;
     border-radius: 10px;
-    max-width: 600px; 
-    max-height: 700px; 
-    display: block;
-    margin: 0 auto;
 }
 aside {
     width: 30%;
