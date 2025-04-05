@@ -205,3 +205,7 @@ footer {
 .social img {
     width: 50px;
 }
+.nom{
+    display: flex;
+    justify-content: space-around;
+}
