@@ -132,7 +132,6 @@ footer {
     margin: 5px 0;
 }
 
-/* Responsive CSS */
 @media screen and (max-width: 1024px) {
     nav ul {
         gap: 40px;
@@ -144,7 +143,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    /* Navigation changes */
+
     nav {
         position: relative;
     }
@@ -172,8 +171,7 @@ footer {
     nav ul.active {
         right: 0;
     }
-    
-    /* Layout changes */
+
     main {
         flex-direction: column;
     }
@@ -188,7 +186,6 @@ footer {
         text-align: center;
     }
     
-    /* Footer changes */
     .footer-info {
         flex-direction: column;
         gap: 20px;
