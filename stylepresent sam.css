@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf0f1;
+    color: #111116;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #555eb3;
+}
+
+h1{
+    color: #eaf0f1;
+    
+}
+
+h2 {
+    color: #555eb3;
+    font-size: 30PX;
+}
+
+.profile {
+    text-align:left;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.profile img {
+    width: 180px; 
+    height: 200px;
+    
+    border: 2px solid #f0efee;
+    object-fit:cover;
+}
+
+
+.about, .experience, .interests, .languages, .projects {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(102, 82, 82, 0.1);
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+a {
+    color: #f1c40f;
+    text-decoration: none;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #fdfefe6c;
+    margin-top: 20px;
+}
+.contact, .social-links {
+    margin-top: 15px;
+}
+
+.social-links h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #14b337;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 70px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #f9f9f9;
+    opacity: 0; 
+    animation: fadeInDown 1s ease-out forwards;
+}
