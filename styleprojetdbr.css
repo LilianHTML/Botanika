@@ -218,3 +218,7 @@ footer {
         padding: 15px 10px;
     }
 }
+ .nom {
+    display: flex;
+    justify-content: space-around;
+}
