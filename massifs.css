@@ -5,9 +5,12 @@ body {
     margin: 0;
     padding: 0;
 }
-.logo:hover img {
-    transform: scale(1.05);
+.logo img {
     transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
 }
 nav {
     display: flex;
