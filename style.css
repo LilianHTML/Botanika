@@ -997,3 +997,42 @@ footer {
         width: 150px;
     }
 }
+@media screen and (max-width: 768px) {
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info > div {
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .social {
+        gap: 30px;
+    }
+
+    .social img {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 15px 10px;
+    }
+
+    .footer-info > div {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .social img {
+        width: 35px;
+    }
+
+    .nom {
+        font-size: 12px;
+    }
+}
