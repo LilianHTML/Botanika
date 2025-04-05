@@ -1,0 +1,63 @@
+body>{
+     font-family: 'Times New Roman', Times, serif; 
+   margin: 0;
+   padding: 0;
+   background-color: #5dacf1;
+   color: #F9F9F9;
+}
+header{
+    text-align: center;
+    padding: 30px;
+    background-color: #cb2eea;
+}
+h1{
+  color:#F9F9F9
+}
+h2{
+  color:#cb2eea ;
+  font-size: 30px;
+}
+ .profile{
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 50px;
+ }
+ .profile img{
+  width: 170px;
+  border-radius: 10px;
+  border-color: #cb2eea;
+ }
+ 
+footer{
+
+}
+.contact, .social-links{
+  margin-top: 15px;
+}
+  .social-links h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #cb2eea;
+  }
+.social-links a{
+  margin: 0 3px;
+  display: inline-block;
+}
+ .social-links img{
+  width: 60px;
+  height: 50px;
+  transform: transform 0.3s ease;
+ }
+.social-links img{
+  transform: scale(1.2);
+  width: 30px;
+}
+.dav{
+  background-color: #f2f4f9;
+}
+
+
+ 
+
+ 
+    
