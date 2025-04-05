@@ -1,47 +1,52 @@
+/* Основные стили */
 body {
     font-family: "Montaga", serif;
     font-weight: 400;
     font-style: normal;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
-header {
-    position: relative;
-}
-
-header nav {
+/* Навигация с выпадающим меню */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: rgb(45, 43, 43);
+    position: relative;
 }
 
-header nav .logo img {
+nav .logo img {
     width: 70px;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
     display: flex;
     padding: 0;
     gap: 100px;
-    margin: 0;
 }
 
-header nav ul li {
+nav ul li {
     margin: 0 15px;
     position: relative;
 }
 
-header nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: normal;
     font-size: 20px;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #739B4E;
+}
+
+/* Стили для выпадающего подменю */
 .service-name {
     position: relative;
 }
@@ -51,10 +56,12 @@ header nav ul li a {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgb(45, 43, 43);
-    min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
+    background: radial-gradient(#403B34, transparent);
+    backdrop-filter: blur(5px);
+    padding: 8px 0;
+    border-radius: 6px;
+    width: max-content;
+    z-index: 1000;
 }
 
 .service-name:hover .service-menu {
@@ -63,17 +70,22 @@ header nav ul li a {
 }
 
 .service-menu a {
-    padding: 12px 16px;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 8px 10px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
 }
 
 .service-menu a:hover {
-    background-color: #575555;
+    color: #739B4E;
 }
 
+/* Баннер */
 .banner {
-    background: url('images/cut.jpg') no-repeat center/cover;
+    background: url('images/pexels-jimbear-2310483.jpg') no-repeat center/cover;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -88,6 +100,7 @@ header nav ul li a {
     font-weight: 200;
 }
 
+/* Основной контент */
 main {
     display: flex;
     justify-content: space-around;
@@ -101,6 +114,11 @@ main {
 .content img {
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.content img:hover {
+    transform: scale(1.02);
 }
 
 aside {
@@ -110,28 +128,38 @@ aside {
     border-radius: 10px;
 }
 
-aside form {
+/* Форма */
+form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 350px;
 }
 
-aside form input {
+form input {
     height: 40px;
     font-family: "Montaga", serif;
     padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-aside form button {
+form button {
     background-color: #739B4E;
     height: 40px;
     font-family: "Montaga", serif;
     color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+form button:hover {
+    background-color: #5F7C42;
+}
+
+/* Футер */
 footer {
     background: url('images/jardin.jpg') no-repeat center/cover;
     color: white;
@@ -144,37 +172,38 @@ footer {
 .footer-info {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social a:hover {
+    transform: scale(1.1);
 }
 
 .social img {
     width: 50px;
-    margin: 0 10px;
-    cursor: pointer;
 }
 
 .nom {
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 10px;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-}
-
+/* Адаптивность */
 @media screen and (max-width: 1024px) {
-    header nav ul {
+    nav ul {
         gap: 40px;
     }
     
@@ -184,17 +213,28 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    /* Navigation changes */
-    header nav {
+    nav {
         position: relative;
     }
     
     .hamburger {
         display: block;
         z-index: 1000;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: all 0.3s ease;
     }
     
-    header nav ul {
+    nav ul {
         position: fixed;
         top: 0;
         right: -100%;
@@ -209,11 +249,10 @@ footer {
         z-index: 999;
     }
     
-    header nav ul.active {
+    nav ul.active {
         right: 0;
     }
     
-    /* Layout changes */
     main {
         flex-direction: column;
     }
@@ -227,19 +266,15 @@ footer {
         font-size: 3.5em;
         text-align: center;
     }
-
+    
     .footer-info {
         flex-direction: column;
         gap: 20px;
     }
-    
-    .social {
-        margin-top: 20px;
-    }
 }
 
 @media screen and (max-width: 480px) {
-    header nav img {
+    nav img {
         width: 50px;
     }
     
@@ -248,11 +283,11 @@ footer {
         height: 300px;
     }
     
-    header nav ul {
+    nav ul {
         width: 100%;
     }
     
-    aside form {
+    form {
         height: auto;
         gap: 15px;
     }
@@ -260,4 +295,42 @@ footer {
     footer {
         padding: 15px 10px;
     }
+
+    .social img {
+        width: 40px;
+    }
+}
+
+/* Стили для подменю */
+.service-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: radial-gradient(#403B34, transparent);
+    backdrop-filter: blur(5px);
+    padding: 8px 0;
+    border-radius: 6px;
+    width: max-content;
+    z-index: 1000;
+}
+
+.service-menu > a:hover + .submenu,
+.service-menu .submenu:hover {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-menu .submenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 8px 10px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.service-menu .submenu a:hover {
+    color: #739B4E;
 }
