@@ -114,8 +114,6 @@ footer {
     transform: scale(1.2);
 }
 
-
-/* Hamburger menu - visible only on mobile */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -132,7 +130,6 @@ footer {
     margin: 5px 0;
 }
 
-/* Responsive CSS */
 @media screen and (max-width: 1024px) {
     nav ul {
         gap: 40px;
@@ -144,7 +141,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    /* Navigation changes */
+
     nav {
         position: relative;
     }
@@ -173,7 +170,6 @@ footer {
         right: 0;
     }
     
-    /* Layout changes */
     main {
         flex-direction: column;
     }
@@ -188,7 +184,6 @@ footer {
         text-align: center;
     }
     
-    /* Footer changes */
     .footer-info {
         flex-direction: column;
         gap: 20px;
