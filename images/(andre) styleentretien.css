@@ -208,3 +208,7 @@ footer {
 .banner h1 {
     font-weight : 200 ;
 }
+     .nom {
+    display : flex;
+    justify-content : space-around;
+}
