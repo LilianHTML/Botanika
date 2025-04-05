@@ -200,23 +200,22 @@ footer {
         margin-top: 20px;
     }
     
-     aside {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    aside {
+        width: 80%; /
+        max-width: 450px;
+        padding: 15px;
     }
-
+    
     form {
-        width: 90%; /* Reduced width */
-        max-width: 400px; /* Maximum width */
+        width: 90%; 
+        max-width: 400px; 
         height: auto;
         gap: 15px;
-        margin: 0 auto; /* Center the form */
+        margin: 0 auto; 
     }
 
     form input, form button {
-        width: 100%; /* Full width within the form */
+        width: 100%; 
     }
 }
 
@@ -233,12 +232,14 @@ footer {
     nav ul {
         width: 100%;
     }
-    aside {
-        padding: 15px; /* Slightly reduced padding */
+    
+  aside {
+        width: 95%; 
+        padding: 10px;
     }
 
     form {
-        width: 95%; /* Slightly wider on very small screens */
+        width: 95%; 
         max-width: 350px;
         gap: 10px;
     }
