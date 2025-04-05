@@ -33,7 +33,7 @@ nav ul li a {
     font-size: 20px;
 }
 .banner {
-    background: url("image/plante2.jpg") no-repeat center/cover;
+    background: url("images/plante2.jpg") no-repeat center/cover;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@ form button {
     font-family: "Montaga", serif;
 }
 footer {
-    background: url("image/jardin.jpg") no-repeat center/cover;
+    background: url("images/jardin.jpg") no-repeat center/cover;
     color: white;
     text-align: center;
     padding: 20px;
