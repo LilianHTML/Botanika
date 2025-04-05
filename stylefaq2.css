@@ -1,0 +1,207 @@
+/* Styles généraux */
+body {
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Header */
+header {
+    background-color: #6BA54A;
+    color: #fff;
+    text-align: left;
+    padding: 30px;
+    font-size: 20px;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 24px;
+    padding-left: 15px;
+}
+
+/* Conteneur principal */
+main {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Section FAQ */
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #fff;
+    align-items: center;
+}
+
+.faq-item {
+    max-width: 900px;
+    width: 100%;
+}
+
+.faq-item h2 {
+    text-align: center;
+    color: #6BA54A;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: "Herr Von Muellerhoff","cursive";
+
+}
+
+.faq-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Texte */
+.faq-content p {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: "Montaga", serif;
+}
+
+
+/* Image */
+.faq-content img {
+    width: 80px;
+    height: auto;
+}
+
+/* Alternance : inverse l'ordre dans les blocs pairs */
+.faq-item:nth-child(even) .faq-content {
+    flex-direction: row-reverse;
+}
+
+
+/* FAQ Item : Alternance des blocs texte-image */
+.faq-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+/* Style des icônes */
+.faq-item img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Alternance : texte à gauche, image à droite */
+.faq-item:nth-child(odd) {
+    flex-direction: row-reverse; /* Inverse l'ordre : image à gauche, texte à droite */
+}
+
+.faq-item:nth-child(even) {
+    flex-direction: row; /* Normal : texte à gauche, image à droite */
+}
+
+/* Titres */
+h2 {
+    font-size: 22px;
+    color: #6BA54A;
+    font-weight: bold;
+}
+
+/* Liens */
+a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraphe */
+p {
+    font-size: 16px;
+    color: #110505;
+    max-width: 600px;
+    line-height: 1.5;
+}
+footer {
+    background: url('image/jardin.jpg') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Section Contact */
+.contact {
+    background-color: #f8f8f8;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.contact h2 {
+    color: #6BA54A;
+    font-size: 24px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #555;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact input, 
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    background-color: #6BA54A;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.contact button:hover {
+    background-color: #588c3e;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+}
+.social img {
+    width: 50px;
+}
