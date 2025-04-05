@@ -176,7 +176,7 @@ footer {
     nav ul.active {
         right: 0;
     }
-    
+
     main {
         flex-direction: column;
     }
@@ -199,24 +199,6 @@ footer {
     .social {
         margin-top: 20px;
     }
-    
-    aside {
-        width: 80%; /
-        max-width: 450px;
-        padding: 15px;
-    }
-    
-    form {
-        width: 90%; 
-        max-width: 400px; 
-        height: auto;
-        gap: 15px;
-        margin: 0 auto; 
-    }
-
-    form input, form button {
-        width: 100%; 
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -233,22 +215,15 @@ footer {
         width: 100%;
     }
     
-  aside {
-        width: 95%; 
-        padding: 10px;
-    }
-
     form {
-        width: 95%; 
-        max-width: 350px;
-        gap: 10px;
+        height: auto;
+        gap: 15px;
     }
     
     footer {
         padding: 15px 10px;
     }
 }
-
 .nom {
     display: flex;
     justify-content: space-around;
