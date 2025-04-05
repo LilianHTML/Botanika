@@ -1,0 +1,61 @@
+body {
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    }
+}
+.logo{
+    background-color: black;
+}
+
+.realisations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5em;
+}
+
+.projet {
+  background: white;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.banner {
+    background: url("images/posegazon.jpg") no-repeat center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5em;
+    
+    font-weight: normal;
+    font-family: "Herr Von Muellerhoff", cursive;
+}
+.projet img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+}
+footer {
+    background: url("images/jardin.jpg") no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    }
+    
+    .footer-info {
+    display: flex;
+    justify-content: space-around;
+    }
+    .social img {
+    width: 50px;
+    align-items:left ;
+    }
+    
+    
+    
