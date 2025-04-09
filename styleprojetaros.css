@@ -33,7 +33,7 @@ nav ul li a {
     font-size: 20px;
 }
 .banner {
-    background: url('images/arrosage1.jpg') no-repeat center/cover;
+    background: url("images/arrosage1.jpg') no-repeat center/cover;
     height: 400px;
     display: flex;
     justify-content: center;
