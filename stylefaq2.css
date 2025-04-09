@@ -208,6 +208,8 @@ footer {
 .nom{
     display: flex;
     justify-content: space-around;
+    color: white;
+    font-size: 15px;
 }
 * Hamburger menu - visible only on mobile */
 .hamburger {
