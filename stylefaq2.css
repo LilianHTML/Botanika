@@ -133,7 +133,7 @@ p {
     line-height: 1.5;
 }
 footer {
-    background: url('image/jardin.jpg') no-repeat center/cover;
+    background: url('images/jardin.jpg') no-repeat center/cover;
     color: white;
     text-align: center;
     padding: 20px;
@@ -209,3 +209,84 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+* Hamburger menu - visible only on mobile */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 1024px) {
+    nav ul {
+        gap: 40px;
+    }
+    
+    .banner {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Navigation changes */
+    nav {
+        position: relative;
+    }
+    
+    .hamburger {
+        display: block;
+        z-index: 1000;
+    }
+    
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: rgb(45, 43, 43);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+    }
+    
+    nav ul.active {
+        right: 0;
+    }
+    
+    /* Layout changes */
+    main {
+        flex-direction: column;
+    }
+    
+    .content, aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .banner {
+        font-size: 3.5em;
+        text-align: center;
+    }
+    
+    /* Footer changes */
+    .footer-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .social {
+        margin-top: 20px;
